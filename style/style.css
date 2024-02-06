@@ -42,7 +42,7 @@ body
     flex-direction: column;
     cursor: pointer;
     transition: 0.5s;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(50px);
 }
 .container .card:hover
 {
@@ -216,9 +216,8 @@ body
     top: -60%;
     width: 70px;
     height: 70px;
-    background: url('https://realestatemarket.com.mx/images/2021/10-octubre/1510/recuperacion-de-cafeterias-hasta-finales-del-2022-g.jpg') no-repeat;
     border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(50px);
     transition: 0.5s;
 }
@@ -247,4 +246,28 @@ body
 .productos
 {
     padding: 5em 5em 1em 1em;
+}
+.container_nosotros
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    border-radius: 20px;
+}
+.container_nosotros h2
+{
+    color: #F5F5DC;
+    padding: 10px;
+}
+.container_nosotros p
+{
+    padding: 10px;
+    color: #F5F5DC;
+    text-align: center;
 }

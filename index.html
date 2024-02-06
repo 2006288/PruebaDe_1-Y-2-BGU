@@ -13,13 +13,13 @@
             <div class="navigation">
                 <ul>
                     <li class="list active">
-                        <a href="#" onclick="">
+                        <a href="#" onclick="abrir_productos();">
                             <span class="icon"><ion-icon name="bag-outline"></ion-icon></span>
                             <span class="text">Productos</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#">
+                        <a href="#" onclick=" abrir_nosotros();">
                             <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
                             <span class="text">Sobre nosotros</span>
                         </a>
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="productos">
-            <div class="container">
+            <div class="container" id="Contenedor_productos" style="display: none;">
                 <div class="card">
                     <div class="imgBx">
                         <img src="img/Espresso.jpg">
@@ -109,6 +109,24 @@
                     </p>
                     <h2>$6,75</h2>
                 </div>
+            </div>
+            <div class="container_nosotros" id="Contenedor_nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    En Café Delicias, nos enorgullece ofrecer a nuestros clientes una experiencia
+                    única en cada taza. Desde nuestros modestos comienzos en 2005, nos hemos
+                    comprometido a brindar no solo deliciosos cafés, sino también un ambiente
+                    acogedor que invite a la relajación y la conexión.
+                    Nuestra pasión por el café de calidad y la hospitalidad genuina es lo que
+                    impulsa cada aspecto de nuestro negocio. Trabajamos en estrecha colaboración
+                    con proveedores locales para seleccionar los granos más finos y frescos, y
+                    nuestro equipo de baristas expertos se esfuerza constantemente por
+                    perfeccionar el arte de preparar la taza perfecta.
+                    En Café Delicias, creemos en más que solo servir café; creemos en construir
+                    comunidades. Nos enorgullece ser un lugar donde amigos se reúnen, donde las
+                    ideas fluyen y donde los lazos se fortalecen. Desde las mañanas animadas
+                    hasta las tardes tranquilas, siempre encontrarás un lugar en nuestra mesa.
+                </p>
             </div>
         </div>
     </div>
