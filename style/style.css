@@ -16,7 +16,9 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--clr);
+    background: url('https://realestatemarket.com.mx/images/2021/10-octubre/1510/recuperacion-de-cafeterias-hasta-finales-del-2022-g.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .container
 {
@@ -25,14 +27,14 @@ body
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 100px;
 }
 .container .card
 {
     position: relative;
     width: 320px;
     height: 250px;
-    background: #CDB79B;
+    background: transparent;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -40,6 +42,7 @@ body
     flex-direction: column;
     cursor: pointer;
     transition: 0.5s;
+    backdrop-filter: blur(100px);
 }
 .container .card:hover
 {
@@ -57,48 +60,8 @@ body
 .container .card:hover .imgBx
 {
     inset:  -50px 60px 250px 60px;
-    box-shadow: 0 0 0 10px var(--clr);
 }
-.container .card .imgBx::before
-{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    left: -30px;
-    border-top-right-radius: 20px;
-    transform: translateY(-50px);
-    opacity: 1;
-    box-shadow: 5px -5px 0 4px var(--clr);
-    pointer-events: none;
-    transition: 0.5s;
-}
-.container .card:hover .imgBx::before
-{
-    opacity: 1;
-    transform: translateY(50px);
-}
-.container .card .imgBx::after
-{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    right: -30px;
-    border-top-left-radius: 20px;
-    transform: translateY(-50px);
-    opacity: 1;
-    box-shadow: -5px -5px 0 4px var(--clr);
-    pointer-events: none;
-    transition: 0.5s;
-}
-.container .card:hover .imgBx::after
-{
-    opacity: 1;
-    transform: translateY(50px);
-}
+
 .container .card .imgBx img
 {
     position: absolute;
@@ -118,6 +81,7 @@ body
     visibility: hidden;
     transform: translateY(-50px);
     transition: 0.5s;
+    color:#fff;
 }
 .container .card:hover p
 {
@@ -145,17 +109,18 @@ body
 {
     position: absolute;
     bottom: 8px;
-    color: #333;
+    color: #302929;
     transition: 0.5s;
     font-weight: 600;
 }
 .container .card:hover h2
 {
     padding: 5px 25px;
-    background: #D2B48C;
+    background: #F5F5DC;
     bottom: -25px;
     border-radius: 15px;
-    box-shadow: 0 0 0 10px var(--clr);
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(50px);
 }
 .container .card h3
 {
@@ -166,7 +131,7 @@ body
     visibility: hidden;
     transform: translateY(-50px);
     transition: 0.5s;
-    color: #333;
+    color: #F5F5DC;
 }
 
 .container .card:hover h3
@@ -183,11 +148,13 @@ body
     position: relative;
     width: 200px;
     height: 70px;
-    background: #fff;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
 }
 .navigation ul
 {
@@ -249,34 +216,11 @@ body
     top: -60%;
     width: 70px;
     height: 70px;
-    background: #D2B48C;
+    background: url('https://realestatemarket.com.mx/images/2021/10-octubre/1510/recuperacion-de-cafeterias-hasta-finales-del-2022-g.jpg') no-repeat;
     border-radius: 50%;
-    border: 5px solid var(--clr);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
     transition: 0.5s;
-}
-.indicator::before
-{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -22px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 var(--clr);
-}
-.indicator::after
-{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -22px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 var(--clr);
 }
 .navigation ul li:nth-child(1).active ~ .indicator
 {
